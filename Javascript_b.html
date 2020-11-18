@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<style>.n{
+	text-align: center;
+}</style>
+	<script>
+		function order(){
+			var a,b,c;
+	a=Number(document.getElementById("one").value);
+	b=Number(document.getElementById("two").value);
+	c= (12*a) +(3*b);
+	document.getElementById("Display").innerHTML =c;
+	if(a==null||a==" ")
+		{
+			window.alert("Enter value for Magic Beans!");
+			return false;
+		}
+		else if(b==null||b==" ")
+		{
+			window.alert("Enter value for Strange Metal thing!");
+			return false;
+		}
+		if(a<0||b<0)
+		{
+			window.alert("Please order Zero or more things!");
+			return false;
+		}
+		if(a!=Number)
+		{
+			window.alert("Please Enter Valid Number Of beans!");
+			return false;
+		}
+		else if(b!=Number)
+		{
+			window.alert("Please Enter Valid Number Of Strange Metal things!");
+			return false;
+		}
+}
+	</script>
+	<style>
+		.m{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="m">
+		<h2>Order</h2>
+		Magic Beans($12 each) : <input id="one"><br><br>
+		Strange Metal thing($3 each): <input id="two"><br><br>
+		<button onclick="order()">Compute Total</button><br><br><br>
+		<p>Total:</p> <p id="Display"></p>
+	</div>
+<hr>
+<footer>
+	<div class="n">
+  <p ><b>Name:</b>P.K.Kartikeya Rao <br><b>Section:</b>B-8<br><b>Roll NO:</b>221710308040</p></div>
+</footer>
+</body>
+</html>
